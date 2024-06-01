@@ -6,15 +6,12 @@
   </head>
 
   <body>
-
         <div class = "bot_btn_container btn-group btn-group-toggle" data-toggle=" buttons" id = "turtle_container">
         </div>
-    
         <div>
             <button id="edit_toggle_btn" class="btn-secondary" onclick = "editor_toggle()"></button>
         </div>
     
-         
       <div id="blocklyDiv" style="height: 420px; width: 620px;"></div>
       <div class="row">
         <div class="col"></div>
@@ -35,6 +32,9 @@
           <button class="btn btn-primary" onclick = "run()">RUN</button>
           <button class="btn btn-success" onclick = "send()">Send to main</button>
       </div>
+      <!-- QUESTION: do I need to remove 'allow-same-origin' for security? 
+            When I try I get cross origin policy errors.
+      -->
       <iframe id="phaser_frame" sandbox='allow-scripts allow-same-origin ' src="/javascripts/turtles/turtles_run.html" width="1080" height="500"></iframe>  
   </div>
 
